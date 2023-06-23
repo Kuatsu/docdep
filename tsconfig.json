@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "target": "es5",
+    "sourceMap": true,
+    "outDir": "lib",
+    "skipLibCheck": true
+  },
+  "lib": ["es2015"],
+  "include": ["src/**/*"]
+}

@@ -1,0 +1,8 @@
+{
+  "overrideDescriptions": {},
+  "inputFile": "./package.json",
+  "outputFile": "./DEPENDENCIES.md",
+  "includeDev": true,
+  "fileFormat": "markdown",
+  "language": "en"
+}
