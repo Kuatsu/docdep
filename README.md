@@ -10,7 +10,7 @@ An example output document can be found in [DEPENDENCIES.md](./DEPENDENCIES.md).
 
 While some options can be set via command line arguments, most of the configuration can only be done via a configuration file, which is therefore favored. The configuration file is a JSON file with the following structure:
 
-```json
+```jsonc
 {
   "input": "./package.json", // Path to the input file (package.json)
   "output": "./DEPENDENCIES.md", // Path to the output file
