@@ -4,6 +4,9 @@
   "description": "Automagically generate beautiful documentation for your project's dependencies",
   "main": "lib/index",
   "source": "src/index",
+  "bin": {
+    "docdep": "./lib/index.js"
+  },
   "files": [
     "src",
     "lib",
