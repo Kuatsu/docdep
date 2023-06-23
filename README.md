@@ -2,6 +2,12 @@
 
 Generates a documentation file (Markdown or PDF) based on the dependencies of a project (`package.json`). It pulls relevant information from the NPM registry and optionally translates descriptions using DeepL.
 
+## Install
+
+```bash
+npm install -g docdep
+```
+
 ## Example
 
 An example output document can be found in [DEPENDENCIES.md](./DEPENDENCIES.md).
@@ -21,6 +27,8 @@ While some options can be set via command line arguments, most of the configurat
   "deeplApiKey": "secret" // API key for DeepL, required if language is not "en"
 }
 ```
+
+## Usage
 
 If you're using a config file, you only need to provide the path to this file as an argument to the CLI:
 
