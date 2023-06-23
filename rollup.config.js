@@ -14,6 +14,7 @@ export default {
   input: 'src/index.ts',
   output: {
     file: 'lib/bundle.js',
+    format: 'cjs',
   },
   plugins: [typescript(), shebang()],
 };
