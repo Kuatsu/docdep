@@ -13,8 +13,7 @@ const shebang = () => ({
 export default {
   input: 'src/index.ts',
   output: {
-    file: 'lib/bundle.cjs',
-    format: 'cjs',
+    file: 'lib/bundle.js',
   },
   plugins: [typescript(), shebang()],
 };
