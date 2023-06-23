@@ -5,7 +5,7 @@
   "main": "lib/bundle",
   "source": "src/index",
   "bin": {
-    "docdep": "./lib/bundle.js"
+    "docdep": "./lib/bundle.cjs"
   },
   "files": [
     "src",
