@@ -1,3 +1,5 @@
+import { i18n } from 'i18next';
+
 export interface Dependency {
   name: string;
   version: string;
@@ -17,3 +19,5 @@ export interface Config {
   deeplApiKey?: string;
   deeplCacheFile: string;
 }
+
+export type Generator = (dependencies: Dependency[], config: Config, i18next: i18n) => Promise<Buffer>;

@@ -1,7 +1,6 @@
-import { i18n } from 'i18next';
-import { Config, Dependency } from '../types';
+import { Generator } from '../types';
 
-export const generateMarkdown = async (dependencies: Dependency[], config: Config, i18next: i18n): Promise<Buffer> => {
+export const generateMarkdown: Generator = async (dependencies, config, i18next) => {
   let markdown = `# ${i18next.t('title')}\n\n`;
   markdown += `${i18next.t('description')}\n\n`;
   markdown += `## ${i18next.t('dependencies.title', { count: dependencies.filter((d) => !d.dev).length })}\n\n`;
