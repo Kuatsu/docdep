@@ -20,6 +20,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "ignorePatterns": ["commitlint.config.cjs", "lib", "node_modules"],
   "plugins": ["@typescript-eslint"],
   "rules": {}
 }
