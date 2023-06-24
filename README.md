@@ -4,13 +4,23 @@ Generates a documentation file (Markdown or PDF) based on the dependencies of a 
 
 ## Install
 
+Either install it globally:
+
 ```bash
 npm install -g docdep
+docdep -c ./docdep.config.json
+```
+
+... or install it locally and run it via `npx`:
+
+```bash
+npm install docdep
+npx docdep -c ./docdep.config.json
 ```
 
 ## Example
 
-An example output document can be found in [DEPENDENCIES.md](./DEPENDENCIES.md).
+The dependencies of `docdep` itself are documented using `docdep`! The example documentation can be found in [DEPENDENCIES.md](./DEPENDENCIES.md).
 
 ## Configuration
 
@@ -27,6 +37,15 @@ While some options can be set via command line arguments, most of the configurat
   "deeplApiKey": "secret" // API key for DeepL, required if language is not "en"
 }
 ```
+
+### Supported Languages
+
+While the given language code can be any language supported by DeepL and the dependencies' descriptions are translated accordingly, the titles and descriptions of the documentation itself only support the following languages:
+
+- English (`en`)
+- German (`de`)
+
+If you want to add support for another language, feel free to open a pull request!
 
 ## Usage
 
