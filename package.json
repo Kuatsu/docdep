@@ -1,6 +1,6 @@
 {
   "name": "docdep",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Automagically generate beautiful documentation for your project's dependencies",
   "main": "lib/bundle",
   "source": "src/index",
