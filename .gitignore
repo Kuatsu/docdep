@@ -1,2 +1,5 @@
 node_modules
 lib
+.env
+docdep.config.dev.json
+DEPENDENCIES.dev.*

@@ -5,7 +5,7 @@ import path from 'path';
 export const getEnv = (key: string): string | undefined => {
   if (process.env[key]) return process.env[key];
   // recursively check for .env file in parent directories
-  let dir = path.dirname(process.cwd());
+  let dir = process.cwd();
   while (dir !== '/') {
     const envFile = path.join(dir, '.env');
     if (fs.existsSync(envFile)) {
